@@ -51,8 +51,14 @@
     @media #{$break-xxl} {
       @content;
     }
+  } @else if $size == 'special' {
+    @media screen and (max-height: 500px) and (min-height: 320px) {
+      @content;
+    }
   }
 }
+
+
 
 @mixin position($pos: $n, $t: $n, $l: $n, $r: $n, $b: $n, $z: $n) {
   position: $pos;

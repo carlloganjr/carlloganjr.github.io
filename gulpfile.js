@@ -47,6 +47,12 @@ let gulp = require('gulp'),
 
   });
 
+  gulp.task('minifyCSS', function() {
+    gulp.src('src/css/styles.css', {base: 'src'})
+        .pipe(cleanCSS({compatibility: '*'}))
+        .pipe(gulp.dest('./'))
+  });
+
   gulp.task('build', ['clean', 'minify'], function() {
     gulp.src(['src/img/*', 'src/index.html'], {base: 'src'})
         .pipe(wait(1000))

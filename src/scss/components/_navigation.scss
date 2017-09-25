@@ -12,6 +12,9 @@ nav {
     @include media('lg') {
       padding-top: 2rem;
     }
+    @include media('special') {
+      padding-top: 1.8rem;
+    }
   }
 }
 
@@ -29,6 +32,9 @@ nav {
   }
   @include media('lg') {
     @include box(450px, 0, 0, 120px);
+  }
+  @include media('special') {
+    @include box(150px, 0, 0, 35px);
   }
 }
 
@@ -58,6 +64,10 @@ nav {
     @include media('lg') {
       font-size: 6.5rem;
       padding-right: 5rem;
+    }
+    @include media('special') {
+      font-size: 2rem;
+      padding-right: .5rem 1rem;
     }
   }
 }
