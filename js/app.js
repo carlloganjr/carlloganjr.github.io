@@ -114,7 +114,7 @@ function toggle_text(element, is_text, to_be_text) {
 $('.title_div').click(function(e) {
   e.preventDefault();
   if(e.target === get_in_touch) {
-    toggle_text('#touch', 'get in touch', 'thanks! i\'m done');
+    toggle_text('#touch', 'Get in touch', 'Thanks! I\'m done');
     $('.contact').toggleClass('toggle_contact');
   }
 });
@@ -122,7 +122,7 @@ $('.title_div').click(function(e) {
 // remove class and toggle button text when contact links are clicked
 $('.contact').click(function(e) {
     $(this).removeClass('toggle_contact');
-    toggle_text('#touch', 'get in touch', 'thanks! i\'m done');
+    toggle_text('#touch', 'Get in touch', 'Thanks! I\'m done');
 });
 
 // open the funtrols panel
