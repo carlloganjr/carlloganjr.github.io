@@ -1,0 +1,112 @@
+#home {
+  @include position(fixed, 0, 0, $z: 1);
+  @include box(100vw, 0, 0, 100vh);
+}
+
+.carl_logo {
+  @include box($n, 0, 0, 40px);
+  @include position(fixed, -100%, -97px, $z: 1003);
+  transition: all .5s ease;
+  cursor: pointer;
+  &:hover svg{
+    .fil0 {fill:$carl_mid}
+  }
+  svg {
+    @include box(100%, 0, 0, 100%);
+    .fil0 {
+      fill:$text_light;
+      transition: all 1s ease;
+    }
+  }
+  @include media('med') {
+    left: -82px;
+  }
+}
+
+.title_div {
+  @include box(90%, 0 auto);
+  text-align: center;
+  h1 {
+    @extend %passion_font;
+    @include fonts(3.5rem, $text_mid, $n, 400);
+    @include box($n, 4.5rem 0 0 0, 0);
+    text-shadow: 0 0 18px rgba(0, 0, 0, 1),
+    0 0 18px rgba(0, 0, 0, .1);
+    @include media('med') {
+      font-size: 7rem;
+      margin-top: 8rem;
+    }
+    @include media('lg') {
+      font-size: 8.5rem;
+      margin-top: 6rem;
+    }
+    @include media('xxl') {
+      font-size: 10vw;
+      margin-top: 25vh;
+    }
+  }
+  h2 {
+    @extend %lalezar_font;
+    @include fonts(1.3rem, $text_mid, $n, 400);
+    @include box($n, 0, 0);
+    @include media('med') {
+      font-size: 2rem;
+    }
+    @include media('lg') {
+      font-size: 2.5rem;
+    }
+    @include media('xxl') {
+      font-size: 3vw;
+    }
+  }
+}
+
+#home_bg {
+  @extend %fixed;
+
+  svg {
+    @include position(absolute, $b: 0);
+    @include box(1550px, 0, 0);
+    transform: translateX(-50%);
+    margin-left: 50%;
+
+    .fil6 {fill:#000066}
+    .fil4 {fill:#00CCFF}
+    .fil5 {fill:#336699}
+    .fil2 {fill:#427DB8}
+    .fil7 {fill:#597A9C}
+    .fil3 {fill:#70AEEB}
+    .fil1 {fill:#FFFFCC}
+    .fil0 {fill:#81C7E5}
+
+    .lights_off {
+      fill: #597A9C;
+    }
+    @include media('xxl') {
+      width: 100%;
+    }
+  }
+}
+
+// @keyframes stars {
+//   from {transform: translateX(-50%) rotate(0deg);}
+//   to {transform: translateX(-50%) rotate(360deg);}
+// }
+
+.home_bg {
+  @extend %fixed;
+  background: linear-gradient(to top, $gradient_light, $gradient_dark);
+  z-index: -5;
+  svg {
+    @include position(absolute, $l: 40px, $b: 0);
+    @include box(1550px, 0, 0);
+    transform: translateX(-50%);
+    transform-origin: 50% 50%;
+    margin-left: 50%;
+    .fil1 {fill:#FFFFCC}
+    .fil0 {fill:#81C7E5}
+    @include media('xxl') {
+      width: 100%;
+    }
+  }
+}

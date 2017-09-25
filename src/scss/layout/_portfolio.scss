@@ -1,0 +1,77 @@
+#portfolio {
+  background: $folio_light;
+  ul {
+    @include flex(column);
+    @include box(99.8%, 0 auto, 0);
+    @include media('med') {
+      @include flex(row, wrap, space-around);
+    }
+  }
+}
+
+.proj {
+  @include box(100%, .15rem 0, 0, 100vw);
+  overflow: hidden;
+  background-size: cover;
+  position: relative;
+  @include media('sm') {
+    height: 50vw;
+  }
+  @include media('med') {
+    @include box(48.5vw, $n, 0, 48.5vw);
+  }
+  @include media('lg') {
+    @include box(32.5vw, $n, 0, 32.5vw);
+  }
+  &:hover .overlay {
+    background: rgba(0, 0, 85, .58);
+  }
+  h2 {
+    @extend %h2;
+  }
+}
+
+.folio_p {
+  @extend %p_dark;
+}
+
+.overlay {
+  @extend %overlay;
+  svg {
+    @include box(20%, 1.25rem 40% 0 40%, 0, 20%);
+    fill: $folio_light;
+    stroke: $folio_light;
+    transition: all .5s ease-in-out;
+  }
+  h3 {
+    @extend %lalezar_font;
+    @include fonts(2rem, $text_light, center);
+    @include box($n, .5rem 0, 0);
+    @include media('med') {
+      font-size: 2.75rem;
+    }
+    @include media('xl') {
+      font-size: 3.25rem;
+      margin: 1.5rem 0 1.5rem 0;
+    }
+  }
+  p {
+    @extend %p;
+  }
+}
+
+.form {
+  svg {
+    @include box(12.5%, 2.25rem 42.5% 0 42.5%, 0);
+  }
+}
+
+
+.folio_hdr {
+  @include media('sm') {
+    @include box(100%, 0, 0, 50vw);
+  }
+  @include media('lg') {
+    height: 30vw;
+  }
+}

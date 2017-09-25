@@ -1,0 +1,56 @@
+#about {
+  background: $about_light;
+}
+
+.about_box {
+  @include box(100%, 0, 0, 100vw);
+  @include media('sm') {
+    height: 50vw;
+  }
+  @include media('med') {
+    height: 50vw;
+  }
+  @include media('lg') {
+    height: 30vw;
+  }
+  h2 {
+    @extend %h2;
+  }
+  p {
+    @extend %p_dark;
+  }
+  &:hover .about_over {
+    background: rgba(0, 0, 85, .58);
+  }
+}
+
+.about_over {
+  @extend %overlay;
+  h3 {
+    color: white;
+  }
+  p {
+    @include fonts(1rem, $text_light, left);
+    @include box(70%, 1rem 0 0 5%);
+    @include media('sm') {
+      width: 40%;
+    }
+    @include media('med') {
+      font-size: 1.375rem;
+    }
+    @include media('lg') {
+      font-size: 1.75rem;
+      margin-top: 3rem;
+    }
+  }
+}
+
+.about_pic {
+  position: relative;
+  background-size: cover;
+  background-position: 45% 50%;
+  height: 100vh;
+  @include media('lg') {
+    height: 60vw;
+  }
+}

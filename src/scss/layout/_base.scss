@@ -1,0 +1,38 @@
+* {
+  font-family: 'Quicksand', sans-serif;
+}
+
+html,
+body {
+  @include box($n, 0, 0);
+
+}
+
+.wrapper {
+  @include box(100%, 0, 0);
+  position: absolute;
+}
+
+.scroll,
+.footer {
+  @include position(relative, $z: 2);
+  @include box(100%, 0, 0);
+}
+
+// body::-webkit-scrollbar {
+//   width: 7px;
+//   background: $scroll_light;
+//     -moz-appearance: scrollbartrack-vertical;
+// }
+//
+// body::-webkit-scrollbar-thumb {
+//   background-color: $scroll_dark;
+//   border-radius: 1rem;
+//   // outline: 1px solid slategrey;
+// }
+
+#psuedo_home {
+  @include position($z: -2);
+  padding-top: 100vh;
+  background: transparent;
+}

@@ -1,0 +1,54 @@
+.contact {
+  @include box(90%, 0 5%, 0);
+  @include position(fixed, $b: -100%, $z: 2);
+  text-align: center;
+  transition: all .6s ease-in-out;
+  a {
+    text-decoration: none;
+    display: inline;
+    margin: 0 .3rem;
+    @include media('sm') {
+      margin: 0 2rem;
+    }
+    @include media('med') {
+      margin: 0 2.5rem;
+    }
+    &:hover .fil1 {
+      transform: scale(1.05);
+      transform-origin: 50% 50%;
+      fill: #a979fc;
+    }
+  }
+  .fil0 {fill:#000066;
+  }
+
+  .fil2 {fill:#597A9C}
+
+  .fil3 {fill:#fcef02}
+
+  .fil1 {
+    fill:white;
+    transition: all .5s ease;
+  }
+}
+
+
+.icon_github {
+  @include box(55px);
+}
+
+.icon_email {
+  @include box(45px);
+}
+
+.icon_linkedin {
+  @include box(50px);
+}
+
+.icon_instagram {
+  @include box(55px);
+}
+
+.toggle_contact {
+  bottom: 0;
+}
