@@ -933,7 +933,7 @@ nav {
     @media screen and (max-height: 500px) and (min-height: 320px) {
       .nav a, .contact_nav a {
         font-size: 2rem;
-        padding-right: .5rem 1rem; } }
+        padding-right: 1rem; } }
 
 .nav:hover .nav_bg, .contact_nav:hover .nav_bg, .nav:hover .contact_nav_bg, .contact_nav:hover .contact_nav_bg {
   transform: translateX(1rem); }
