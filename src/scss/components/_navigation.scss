@@ -1,5 +1,5 @@
 nav {
-  @include position(fixed, 0, 0, $z: -1);
+  @include position(fixed, 0, 100%, $z: -1);
   @include box(100%, 0, 0, 100%);
   // overflow: hidden;
   ul {
@@ -7,7 +7,7 @@ nav {
     list-style: none;
     @include box(100%, auto, 5rem 0 0 0, 100%);
     background: $nav_dark;
-    transform: translateX(100%);
+    transform: translateX(0);
     transition: all .5s ease-in-out;
     @include media('lg') {
       padding-top: 2rem;

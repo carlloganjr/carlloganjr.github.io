@@ -15,7 +15,7 @@ navigation.addEventListener('click', function(e) {
       e.preventDefault();
       scroll_div[i].scrollIntoView({behavior: 'smooth', block: 'start'});
     } else if(e.target && menu_p.innerHTML == 'CLOSE'){
-      ul.style.transform = 'translateX(100%)';
+      ul.style.transform = 'translateX(0)';
       menu_p.innerHTML = 'MENU';
       setTimeout(function() {
         navigation.style.zIndex = '-1';
@@ -36,11 +36,11 @@ $('.contact_nav').click(function(e) {
 menu.addEventListener('click', function(e) {
   if(e.target && menu_p.innerHTML == 'MENU') {
     navigation.style.zIndex = '1000';
-    ul.style.transform = 'translateX(0)';
+    ul.style.transform = 'translateX(-100%)';
     menu_p.innerHTML = 'CLOSE';
     $('.carl_logo').css('top', '7px');
   } else if(e.target && menu_p.innerHTML == 'CLOSE') {
-    ul.style.transform = 'translateX(100%)';
+    ul.style.transform = 'translateX(0)';
     menu_p.innerHTML = 'MENU';
     if($('.slide_up').css('display') === 'none' || $('.menu_bg').css('height') == '55px') {
       $('.carl_logo').css('top', '7px');
