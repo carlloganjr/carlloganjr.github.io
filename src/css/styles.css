@@ -50,7 +50,7 @@
   margin: 0.5rem auto; }
   @media (min-width: 768px) {
     .folio_p, .about_box p, .overlay p {
-      font-size: 1.375rem; } }
+      font-size: 1.1rem; } }
 
 .folio_p, .about_box p {
   color: #005; }
@@ -706,6 +706,7 @@ body {
   margin: 0.15rem 0;
   padding: 0;
   height: 100vw;
+  text-align: center;
   overflow: hidden;
   background-size: cover;
   position: relative; }
@@ -742,7 +743,7 @@ body {
   padding: 0; }
   @media (min-width: 768px) {
     .overlay h3 {
-      font-size: 2.75rem; } }
+      font-size: 2.4rem; } }
   @media (min-width: 1268px) {
     .overlay h3 {
       font-size: 3.25rem;
@@ -801,8 +802,8 @@ body {
       font-size: 1.375rem; } }
   @media (min-width: 1024px) {
     .about_over p {
-      font-size: 1.75rem;
-      margin-top: 3rem; } }
+      font-size: 1.5rem;
+      margin-top: 2.5rem; } }
 
 .about_pic {
   position: relative;
@@ -838,7 +839,7 @@ body {
   .btn_connect .btn_in {
     background-color: #005; }
   .btn_connect .btn_link {
-    top: .6rem;
+    padding-top: .6rem;
     font-size: 1.5rem;
     color: #005;
     text-align: center; }
@@ -988,12 +989,14 @@ nav {
     padding-top: .55rem; }
 
 .btn_folio {
+  display: inline-block;
   width: 67px;
+  margin: 0.5rem;
   height: 15px; }
   .btn_folio .btn_link {
     font-size: 1.25rem;
     color: #fff;
-    padding: 0.25rem 0 0 1rem; }
+    padding: 0.25rem 0 0 0; }
 
 .contact {
   width: 90%;

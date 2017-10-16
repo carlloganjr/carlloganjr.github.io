@@ -11,6 +11,7 @@
 
 .proj {
   @include box(100%, .15rem 0, 0, 100vw);
+  text-align: center;
   overflow: hidden;
   background-size: cover;
   position: relative;
@@ -48,7 +49,7 @@
     @include fonts(2rem, $text_light, center);
     @include box($n, .5rem 0, 0);
     @include media('med') {
-      font-size: 2.75rem;
+      font-size: 2.4rem;
     }
     @include media('xl') {
       font-size: 3.25rem;

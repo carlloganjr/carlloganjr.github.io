@@ -21,7 +21,8 @@
     background-color: $footer_dark;
   }
   .btn_link {
-    top: .6rem;
+    // top: .6rem;
+    padding-top: .6rem;
     @include fonts(1.5rem, $text_dark, center);
     &:hover {
       color: $text_light

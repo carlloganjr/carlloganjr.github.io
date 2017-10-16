@@ -10,10 +10,11 @@
 }
 
 .btn_folio {
-  @include box(67px, $tall: 15px);
+  display: inline-block;
   @extend %btn;
+  @include box(67px, .5rem, $n, 15px);
   .btn_link {
     @include fonts(1.25rem, $text_light);
-    @include box($n, $n, .25rem 0 0 1rem);
+    @include box($n, $n, .25rem 0 0 0);
   }
 }

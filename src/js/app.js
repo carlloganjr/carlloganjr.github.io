@@ -67,9 +67,9 @@ $(window).scroll(function() {
       'url(img/dash.png)',
       'url(img/form.png)',
       'url(img/gallery.png)'
-    ]
-    let y_start = win_ht + folio_offset - (win_ht * .7);
-    let bg_start = win_ht + folio_offset - (win_ht * .4);
+    ];
+    let y_start = win_ht + folio_offset - (win_ht * 0.7);
+    let bg_start = win_ht + folio_offset - (win_ht * 0.4);
     let menu_bg = win_ht - 55;
     if(y_start <= y_scroll) {
       $(this).children().children('svg').css('margin-top', '1.25rem');
@@ -103,7 +103,7 @@ function toggle_text(element, is_text, to_be_text) {
       $(element).text(is_text);
     }
   });
-};
+}
 
 // displays contact div and toggle button text
 $('.title_div').click(function(e) {
@@ -269,7 +269,7 @@ funtrols_div.addEventListener('mouseover', function(e) {
         'Turn the city lights on and off.',
         'See what\'s lurking above.',
         'Watch a rocket launch.'
-      ]
+      ];
       $('.fun_tips p').text(fun_tips[i]);
     }
   }
